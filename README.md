@@ -1,4 +1,4 @@
-# Denizugur Tap
+# :beer: Homebrew Tap of [DenizUgur](https://github.com/DenizUgur)
 
 ## How do I install these formulae?
 
