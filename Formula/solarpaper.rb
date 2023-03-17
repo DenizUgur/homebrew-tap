@@ -3,7 +3,7 @@ class Solarpaper < Formula
   homepage "https://github.com/DenizUgur/solarpaper"
   url "https://github.com/DenizUgur/solarpaper.git",
       revision: "55a40f79cfa1b806dab630501664eea4eb1f1379"
-  version "0.0.1"
+  version "0.0.2"
 
   depends_on "boost" => :build
   depends_on "cmake" => :build
@@ -22,6 +22,7 @@ class Solarpaper < Formula
   service do
     run [opt_bin / "update-wallpaper.sh"]
     run_type :interval
+    run_at_load true
     interval 900
   end
 
