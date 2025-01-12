@@ -2,8 +2,8 @@ class Solarpaper < Formula
   desc "This formula will render and set the wallpaper to current solar system state"
   homepage "https://github.com/DenizUgur/solarpaper"
   url "https://github.com/DenizUgur/solarpaper.git",
-      revision: "b431bad52a5da0a2b0442ad615bf0ded3973d22a"
-  version "0.0.3"
+      revision: "4a3ab42e8edbe1f3a4e6e838a23b9027bc0c0cc3"
+  version "0.0.4"
 
   depends_on "boost" => :build
   depends_on "cmake" => :build
