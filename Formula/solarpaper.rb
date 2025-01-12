@@ -2,8 +2,8 @@ class Solarpaper < Formula
   desc "This formula will render and set the wallpaper to current solar system state"
   homepage "https://github.com/DenizUgur/solarpaper"
   url "https://github.com/DenizUgur/solarpaper.git",
-      revision: "55a40f79cfa1b806dab630501664eea4eb1f1379"
-  version "0.0.2"
+      revision: "b431bad52a5da0a2b0442ad615bf0ded3973d22a"
+  version "0.0.3"
 
   depends_on "boost" => :build
   depends_on "cmake" => :build
@@ -11,8 +11,8 @@ class Solarpaper < Formula
   depends_on "wallpaper"
 
   def install
-    system "cmake", "-S", "renderer/app", "-B", "build", *std_cmake_args
-    system "cmake", "--build", "build"
+    system "cmake", "-S", "renderer", "-B", "build", *std_cmake_args
+    system "cmake", "--build", "build", "-j"
     system "cmake", "--install", "build"
 
     # Install the script
