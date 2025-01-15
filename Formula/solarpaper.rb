@@ -3,7 +3,7 @@ class Solarpaper < Formula
   homepage "https://github.com/DenizUgur/solarpaper"
   url "https://github.com/DenizUgur/solarpaper.git",
       revision: "4a3ab42e8edbe1f3a4e6e838a23b9027bc0c0cc3"
-  version "0.0.4"
+  version "0.0.5"
 
   depends_on "boost" => :build
   depends_on "cmake" => :build
