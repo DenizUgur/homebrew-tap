@@ -6,9 +6,9 @@ class Solarpaper < Formula
   version "0.0.5"
 
   depends_on "cmake" => :build
-  depends_on "wallpaper" => :optional
   depends_on "boost"
   depends_on "curl"
+  depends_on "wallpaper" => :optional
 
   def install
     system "cmake", "-S", "renderer", "-B", "build", *std_cmake_args
@@ -31,16 +31,11 @@ class Solarpaper < Formula
       run_type :interval
       run_at_load true
       interval 900
-    else
-      # Service is disabled when wallpaper is not installed
-      nil
     end
   end
 
   test do
     system "#{bin}/solarpaper"
-    if build.with? "wallpaper"
-      system "#{bin}/update-wallpaper.sh"
-    end
+    system "#{bin}/update-wallpaper.sh" if build.with? "wallpaper"
   end
 end
