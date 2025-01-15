@@ -5,6 +5,11 @@ class Solarpaper < Formula
       revision: "4a3ab42e8edbe1f3a4e6e838a23b9027bc0c0cc3"
   version "0.0.5"
 
+  bottle do
+    root_url "https://github.com/DenizUgur/homebrew-tap/releases/download/solarpaper-0.0.5"
+    sha256 cellar: :any, arm64_sequoia: "9eff5b6c878ced00efbd6f371dacf01b99bf62a0a09211de7e33096626a263a9"
+  end
+
   depends_on "cmake" => :build
   depends_on "boost"
   depends_on "curl"
