@@ -2,8 +2,8 @@ class Solarpaper < Formula
   desc "This formula will render and set the wallpaper to the current solar system state"
   homepage "https://github.com/DenizUgur/solarpaper"
   url "https://github.com/DenizUgur/solarpaper.git",
-      revision: "4a3ab42e8edbe1f3a4e6e838a23b9027bc0c0cc3"
-  version "0.0.5"
+      revision: "1f78c593a4a407fce78a30ad19c7333c70c067f2"
+  version "0.0.6"
 
   bottle do
     root_url "https://github.com/DenizUgur/homebrew-tap/releases/download/solarpaper-0.0.5"
