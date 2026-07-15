@@ -7,8 +7,8 @@ class Solarpaper < Formula
   revision 1
 
   bottle do
-    root_url "https://github.com/DenizUgur/homebrew-tap/releases/download/solarpaper-0.0.6"
-    sha256 cellar: :any, arm64_sequoia: "175a3335e3045b0d13b1e024a4f884eb48769e382153a3c37129c56571bbf425"
+    root_url "https://github.com/DenizUgur/homebrew-tap/releases/download/solarpaper-0.0.6_1"
+    sha256 cellar: :any, arm64_tahoe: "91f1817548dcc84922776501c90d9490a494024c17f8ce3562e0457562de3480"
   end
 
   depends_on "cmake" => :build
