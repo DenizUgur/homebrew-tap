@@ -4,6 +4,7 @@ class Solarpaper < Formula
   url "https://github.com/DenizUgur/solarpaper.git",
       revision: "1f78c593a4a407fce78a30ad19c7333c70c067f2"
   version "0.0.6"
+  revision 1
 
   bottle do
     root_url "https://github.com/DenizUgur/homebrew-tap/releases/download/solarpaper-0.0.6"
